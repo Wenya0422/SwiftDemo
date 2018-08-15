@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A506E43D5D0F66D76959D97 /* Pods_swiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CF30B385B4324A09C4506 /* Pods_swiftDemoTests.framework */; };
+		D3720EEC21244B0E0061771C /* RequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3720EEB21244B0E0061771C /* RequestClient.swift */; };
 		D3E45CCF2123FF3000DEFE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E45CCE2123FF3000DEFE5D /* AppDelegate.swift */; };
 		D3E45CD12123FF3000DEFE5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E45CD02123FF3000DEFE5D /* ViewController.swift */; };
 		D3E45CD42123FF3000DEFE5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E45CD22123FF3000DEFE5D /* Main.storyboard */; };
@@ -37,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23B040A83DF78EB8B7597AEA /* Pods-swiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftDemoTests/Pods-swiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		286CF30B385B4324A09C4506 /* Pods_swiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95033B3869B9ABDBDD746559 /* Pods-swiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftDemoTests/Pods-swiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3720EEB21244B0E0061771C /* RequestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClient.swift; sourceTree = "<group>"; };
+		D3720EEF212454C30061771C /* swiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		D3E45CCB2123FF3000DEFE5D /* swiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E45CCE2123FF3000DEFE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3E45CD02123FF3000DEFE5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +59,6 @@
 		D3E45CF12123FF3100DEFE5D /* swiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftDemoUITests.swift; sourceTree = "<group>"; };
 		D3E45CF32123FF3100DEFE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3E45D032124157400DEFE5D /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
-		D3E45D0B21242AA100DEFE5D /* swiftDemoBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swiftDemoBridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A506E43D5D0F66D76959D97 /* Pods_swiftDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +87,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9FB6AE7A6C768F3558539E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23B040A83DF78EB8B7597AEA /* Pods-swiftDemoTests.debug.xcconfig */,
+				95033B3869B9ABDBDD746559 /* Pods-swiftDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D04BA5CF41980C56E630AE43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				286CF30B385B4324A09C4506 /* Pods_swiftDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3720EEA21244AE70061771C /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				D3720EEB21244B0E0061771C /* RequestClient.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
 		D3E45CC22123FF3000DEFE5D = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +119,8 @@
 				D3E45CE52123FF3100DEFE5D /* swiftDemoTests */,
 				D3E45CF02123FF3100DEFE5D /* swiftDemoUITests */,
 				D3E45CCC2123FF3000DEFE5D /* Products */,
+				A9FB6AE7A6C768F3558539E7 /* Pods */,
+				D04BA5CF41980C56E630AE43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +137,7 @@
 		D3E45CCD2123FF3000DEFE5D /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D3720EEA21244AE70061771C /* NetWork */,
 				D3E45D0A21242A4700DEFE5D /* UITools */,
 				D3E45CCE2123FF3000DEFE5D /* AppDelegate.swift */,
 				D3E45CD02123FF3000DEFE5D /* ViewController.swift */,
@@ -137,7 +172,7 @@
 		D3E45D0A21242A4700DEFE5D /* UITools */ = {
 			isa = PBXGroup;
 			children = (
-				D3E45D0B21242AA100DEFE5D /* swiftDemoBridgingHeader.h */,
+				D3720EEF212454C30061771C /* swiftDemo-Bridging-Header.h */,
 			);
 			path = UITools;
 			sourceTree = "<group>";
@@ -166,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3E45CF92123FF3100DEFE5D /* Build configuration list for PBXNativeTarget "swiftDemoTests" */;
 			buildPhases = (
+				B2F5596B34F4DA619932E1CF /* [CP] Check Pods Manifest.lock */,
 				D3E45CDE2123FF3100DEFE5D /* Sources */,
 				D3E45CDF2123FF3100DEFE5D /* Frameworks */,
 				D3E45CE02123FF3100DEFE5D /* Resources */,
+				B10FCBD6E80C4018E41F502C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,11 +306,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B10FCBD6E80C4018E41F502C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swiftDemoTests/Pods-swiftDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftDemoTests/Pods-swiftDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2F5596B34F4DA619932E1CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3E45CC72123FF3000DEFE5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3720EEC21244B0E0061771C /* RequestClient.swift in Sources */,
 				D3E45D042124157400DEFE5D /* TableController.swift in Sources */,
 				D3E45CD12123FF3000DEFE5D /* ViewController.swift in Sources */,
 				D3E45CCF2123FF3000DEFE5D /* AppDelegate.swift in Sources */,
@@ -388,6 +465,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftDemo/UITools/swiftDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -441,6 +519,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftDemo/UITools/swiftDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -458,6 +537,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "wenya-test.swiftDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -475,6 +555,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "wenya-test.swiftDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -482,6 +563,7 @@
 		};
 		D3E45CFA2123FF3100DEFE5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B040A83DF78EB8B7597AEA /* Pods-swiftDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +584,7 @@
 		};
 		D3E45CFB2123FF3100DEFE5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95033B3869B9ABDBDD746559 /* Pods-swiftDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
